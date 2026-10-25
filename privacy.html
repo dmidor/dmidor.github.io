@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polityka prywatności — Farma AI</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+        max-width: 42rem; margin: 0 auto; padding: 3rem 1.25rem;
+      }
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 1.05rem; margin-top: 2rem; }
+      ul { padding-left: 1.25rem; }
+      code { font-size: 0.9em; }
+      .meta { opacity: 0.7; font-size: 0.9rem; }
+      hr { margin: 3rem 0; border: 0; border-top: 1px solid currentColor; opacity: 0.2; }
+      .en { opacity: 0.85; }
+      a { color: inherit; }
+    </style>
+  </head>
+  <body>
+    <h1>Polityka prywatności</h1>
+    <p class="meta">Farma AI · obowiązuje od 25 października 2026</p>
+
+    <h2>Kim jesteśmy</h2>
+    <p>
+      Farma AI to prywatna, niekomercyjna automatyzacja domowa, uruchomiona na
+      serwerze należącym do jej właściciela i używana wyłącznie przez niego.
+      Aplikacja nie ma innych użytkowników i nie przyjmuje rejestracji.
+      Administratorem danych jest właściciel aplikacji, kontakt:
+      <a href="mailto:dmidor@gmail.com">dmidor@gmail.com</a>.
+    </p>
+
+    <h2>Jakie dane są przetwarzane</h2>
+    <p>
+      Aplikacja uzyskuje dostęp wyłącznie do <strong>konta Google swojego
+      właściciela</strong>, po jego wyraźnej zgodzie, w zakresie
+      <code>gmail.readonly</code> (odczyt poczty i ustawień). Zakres ten
+      <strong>nie pozwala</strong> na wysyłanie, usuwanie ani modyfikowanie
+      wiadomości.
+    </p>
+    <p>Z poczty odczytywane są:</p>
+    <ul>
+      <li>metadane wiadomości: nadawca, data, temat,</li>
+      <li>treść wiadomości rozpoznanych jako rachunki, faktury i
+        potwierdzenia płatności,</li>
+      <li>załączniki takich wiadomości (np. faktury PDF).</li>
+    </ul>
+    <p>
+      Z tych danych wydobywane są: data płatności, kwota, wystawca i tytuł.
+      Aplikacja celowo <strong>nie zapisuje</strong> numerów kont, numerów
+      kart, salda rachunku ani danych uwierzytelniających.
+    </p>
+
+    <h2>W jakim celu</h2>
+    <p>
+      Wyłącznie po to, by prowadzić domowy budżet właściciela: rozpoznawać
+      wydatki, pilnować terminów płatności i przygotowywać zestawienia. Dane
+      nie są wykorzystywane do profilowania, reklamy ani podejmowania decyzji
+      wobec innych osób.
+    </p>
+
+    <h2>Komu dane są przekazywane</h2>
+    <p>
+      Dane <strong>nie są sprzedawane, wymieniane ani udostępniane</strong>
+      osobom trzecim w celach własnych tych osób. Istnieje jednak jedno
+      przekazanie, które ujawniamy wprost, bo jest nieodłączną częścią
+      działania aplikacji:
+    </p>
+    <ul>
+      <li>
+        <strong>Dostawcy modeli językowych.</strong> Aby zaklasyfikować
+        wiadomość jako rachunek i odczytać z niej kwotę, jej treść jest
+        przesyłana do zewnętrznego interfejsu modelu językowego (obecnie
+        OpenRouter jako pośrednik oraz dostawca wybranego modelu). Dane są tam
+        przetwarzane w celu udzielenia odpowiedzi, zgodnie z politykami tych
+        dostawców.
+      </li>
+    </ul>
+
+    <h2>Gdzie dane są przechowywane</h2>
+    <p>
+      Wyniki przetwarzania (zapisy budżetu, pobrane faktury) przechowywane są
+      na prywatnym serwerze właściciela w Unii Europejskiej, dostępnym tylko
+      dla niego. Aplikacja przechowuje token odświeżania OAuth, który służy
+      wyłącznie do ponawiania dostępu do poczty właściciela.
+    </p>
+
+    <h2>Jak długo</h2>
+    <p>
+      Zapisy budżetu są przechowywane tak długo, jak długo właściciel ich
+      potrzebuje; usuwa je samodzielnie. Dane znikają trwale wraz z
+      wyłączeniem serwera lub usunięciem wolumenu z danymi.
+    </p>
+
+    <h2>Wycofanie zgody</h2>
+    <p>
+      Dostęp aplikacji do konta Google można odebrać w każdej chwili i ze
+      skutkiem natychmiastowym na stronie
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+      Po odebraniu zgody aplikacja traci możliwość odczytu poczty.
+    </p>
+
+    <h2>Zgodność z polityką Google</h2>
+    <p>
+      Wykorzystanie danych uzyskanych z interfejsów Google podlega
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      w tym wymogom ograniczonego użycia (Limited Use). Dane z Gmaila są
+      używane wyłącznie w celu opisanym wyżej i nie są używane do trenowania
+      modeli uogólnionych.
+    </p>
+
+    <h2>Zmiany</h2>
+    <p>
+      Zmiany tej polityki będą publikowane na tej stronie wraz z nową datą
+      obowiązywania.
+    </p>
+
+    <hr />
+
+    <div class="en">
+      <h2>English summary</h2>
+      <p>
+        Farma AI is a private, non-commercial home automation run by and for a
+        single person — its owner. It is not a public service and has no other
+        users.
+      </p>
+      <p>
+        It accesses only the owner's own Google account, with their explicit
+        consent, using the <code>gmail.readonly</code> scope. That scope does
+        not permit sending, deleting or modifying mail. It reads message
+        metadata, and the content and attachments of messages identified as
+        bills, invoices and payment confirmations, in order to maintain the
+        owner's household budget and track payment due dates. It deliberately
+        does not record bank account numbers, card numbers or balances.
+      </p>
+      <p>
+        Data is not sold, traded or shared with third parties for their own
+        purposes. One disclosed transfer is inherent to how the application
+        works: message content is sent to an external large language model API
+        (currently OpenRouter as an intermediary, plus the selected model
+        provider) in order to classify the message and extract amounts.
+        Processing results are stored on the owner's private server in the
+        European Union.
+      </p>
+      <p>
+        Access can be revoked at any time, with immediate effect, at
+        <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
+        Use of Google user data complies with the
+        <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+        including the Limited Use requirements. Gmail data is not used to train
+        generalized models.
+      </p>
+      <p>Contact: <a href="mailto:dmidor@gmail.com">dmidor@gmail.com</a></p>
+    </div>
+  </body>
+</html>
